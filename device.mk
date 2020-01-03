@@ -11,7 +11,11 @@ $(call inherit-product, vendor/oneplus/guacamole/guacamole-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-lucid
+
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lucid
 
 # Audio
 PRODUCT_COPY_FILES += \
