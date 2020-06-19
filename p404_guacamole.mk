@@ -15,8 +15,6 @@ $(call inherit-product, device/oneplus/guacamole/device.mk)
 $(call inherit-product, vendor/404/configs/common.mk)
 
 # Gapps
-IS_PHONE := true
-TARGET_INCLUDE_STOCK_ARCORE := true
 $(call inherit-product-if-exists, vendor/gapps/config.mk)
 
 # Device identifier. This must come after all inclusions.
